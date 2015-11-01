@@ -1,0 +1,932 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6605EA8A1BD7E557005A5016 /* PushReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6605EA891BD7E557005A5016 /* PushReceiver.m */; };
+		661104511B8751B600C8F1F4 /* UserIdentity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661104501B8751B600C8F1F4 /* UserIdentity.storyboard */; };
+		661104591B87526700C8F1F4 /* UserIdentityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661104581B87526700C8F1F4 /* UserIdentityViewController.m */; };
+		6611045C1B8756F500C8F1F4 /* DemoFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 6611045B1B8756F500C8F1F4 /* DemoFeature.m */; };
+		6699C6511BBAF90B00436B45 /* UserSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6699C6501BBAF90B00436B45 /* UserSettingsViewController.m */; };
+		6B0502F71B8BD99500DA1F24 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B0502F51B8BD99500DA1F24 /* SignIn.storyboard */; };
+		6B443C4F1B5DB06200406B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B443C4E1B5DB06200406B17 /* main.m */; };
+		6B443C521B5DB06200406B17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B443C511B5DB06200406B17 /* AppDelegate.m */; };
+		6B443C5A1B5DB06200406B17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B443C591B5DB06200406B17 /* Images.xcassets */; };
+		6B443C771B5DB22500406B17 /* AWSMobileClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B443C731B5DB22500406B17 /* AWSMobileClient.m */; };
+		6B443C791B5DB2F100406B17 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B443C781B5DB2F100406B17 /* AWSCore.framework */; };
+		6B443C7C1B5DB42300406B17 /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B443C7B1B5DB42300406B17 /* AWSCognito.framework */; };
+		6B443C821B5DD72900406B17 /* AWSFacebookSignInProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B443C811B5DD72900406B17 /* AWSFacebookSignInProvider.m */; };
+		6B443C861B5DD8DC00406B17 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B443C831B5DD8DC00406B17 /* FBSDKCoreKit.framework */; };
+		6B443C871B5DD8DC00406B17 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B443C841B5DD8DC00406B17 /* FBSDKLoginKit.framework */; };
+		6B443C881B5DD8DC00406B17 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B443C851B5DD8DC00406B17 /* FBSDKShareKit.framework */; };
+		6B443C8B1B5DEC1F00406B17 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B443C8A1B5DEC1F00406B17 /* libsqlite3.dylib */; };
+		6B443C8D1B5DEC2800406B17 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B443C8C1B5DEC2800406B17 /* libz.dylib */; };
+		6B443C921B5E002E00406B17 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B443C911B5E002E00406B17 /* SignInViewController.m */; };
+		6B443C951B5E031B00406B17 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B443C941B5E031B00406B17 /* MainViewController.m */; };
+		6B8A6F441B616B260035EA74 /* AWSIdentityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8A6F431B616B260035EA74 /* AWSIdentityManager.m */; };
+		6B9E5DE61BAFDBF6005E71C9 /* UserDataStorage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B9E5DE51BAFDBF6005E71C9 /* UserDataStorage.storyboard */; };
+		6BB938921BAC68A200C527A0 /* PushNotification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB938901BAC68A200C527A0 /* PushNotification.storyboard */; };
+		6BB938931BAC68A200C527A0 /* PushNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB938911BAC68A200C527A0 /* PushNotificationViewController.m */; };
+		6BBC97B71BA358C300DC9B60 /* ColorThemeSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBC97B61BA358C300DC9B60 /* ColorThemeSettings.m */; };
+		6BBC97BB1BA76A8200DC9B60 /* AWSTask+CheckExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBC97BA1BA76A8200DC9B60 /* AWSTask+CheckExceptions.m */; };
+		6BBCBCAA1BB07C14001B8F35 /* UserSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBCBCA91BB07C14001B8F35 /* UserSettings.storyboard */; };
+		6BCB928D1BAF889F00475B9E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCB928C1BAF889F00475B9E /* CoreMotion.framework */; };
+		6BCB92911BAF88D600475B9E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCB92901BAF88D600475B9E /* CoreLocation.framework */; };
+		6BCB92931BAF896700475B9E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCB92921BAF896700475B9E /* AddressBook.framework */; };
+		6BE45F191B7A7D4F00344228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE45F181B7A7D4F00344228 /* Main.storyboard */; };
+		6BFF25811B5E360F002364F9 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFF25801B5E360F002364F9 /* AssetsLibrary.framework */; };
+		6BFF25831B5E3617002364F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFF25821B5E3617002364F9 /* Foundation.framework */; };
+		6BFF258D1B5E364D002364F9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFF258C1B5E364D002364F9 /* MediaPlayer.framework */; };
+		6BFF258F1B5E3655002364F9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFF258E1B5E3655002364F9 /* Security.framework */; };
+		6BFF25911B5E366C002364F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFF25901B5E366C002364F9 /* UIKit.framework */; };
+		CE276A911BE21E0F00951850 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A6E1BE21E0F00951850 /* Icon-120.png */; };
+		CE276A921BE21E0F00951850 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A6F1BE21E0F00951850 /* Icon-152.png */; };
+		CE276A931BE21E0F00951850 /* Icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A701BE21E0F00951850 /* Icon-16.png */; };
+		CE276A941BE21E0F00951850 /* Icon-24.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A711BE21E0F00951850 /* Icon-24.png */; };
+		CE276A951BE21E0F00951850 /* Icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A721BE21E0F00951850 /* Icon-32.png */; };
+		CE276A961BE21E0F00951850 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A731BE21E0F00951850 /* Icon-40.png */; };
+		CE276A971BE21E0F00951850 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A741BE21E0F00951850 /* Icon-40@2x.png */; };
+		CE276A981BE21E0F00951850 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A751BE21E0F00951850 /* Icon-60.png */; };
+		CE276A991BE21E0F00951850 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A761BE21E0F00951850 /* Icon-60@2x.png */; };
+		CE276A9A1BE21E0F00951850 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A771BE21E0F00951850 /* Icon-60@3x.png */; };
+		CE276A9B1BE21E0F00951850 /* Icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A781BE21E0F00951850 /* Icon-64.png */; };
+		CE276A9C1BE21E0F00951850 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A791BE21E0F00951850 /* Icon-72.png */; };
+		CE276A9D1BE21E0F00951850 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A7A1BE21E0F00951850 /* Icon-72@2x.png */; };
+		CE276A9E1BE21E0F00951850 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A7B1BE21E0F00951850 /* Icon-76.png */; };
+		CE276A9F1BE21E0F00951850 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A7C1BE21E0F00951850 /* Icon-76@2x.png */; };
+		CE276AA41BE21E0F00951850 /* Icon-Small-40.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A811BE21E0F00951850 /* Icon-Small-40.png */; };
+		CE276AA51BE21E0F00951850 /* Icon-Small-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A821BE21E0F00951850 /* Icon-Small-40@2x.png */; };
+		CE276AA61BE21E0F00951850 /* Icon-Small-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A831BE21E0F00951850 /* Icon-Small-40@3x.png */; };
+		CE276AA71BE21E0F00951850 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A841BE21E0F00951850 /* Icon-Small-50.png */; };
+		CE276AA81BE21E0F00951850 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A851BE21E0F00951850 /* Icon-Small-50@2x.png */; };
+		CE276AA91BE21E0F00951850 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A861BE21E0F00951850 /* Icon-Small.png */; };
+		CE276AAA1BE21E0F00951850 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A871BE21E0F00951850 /* Icon-Small@2x.png */; };
+		CE276AAB1BE21E0F00951850 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A881BE21E0F00951850 /* Icon-Small@3x.png */; };
+		CE276AAF1BE21E0F00951850 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A8C1BE21E0F00951850 /* Icon.png */; };
+		CE276AB01BE21E0F00951850 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A8D1BE21E0F00951850 /* Icon@2x.png */; };
+		CE276AB11BE21E0F00951850 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A8E1BE21E0F00951850 /* iTunesArtwork.png */; };
+		CE276AB21BE21E0F00951850 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE276A8F1BE21E0F00951850 /* iTunesArtwork@2x.png */; };
+		CE276AB71BE2231C00951850 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE276AB61BE2231C00951850 /* LocationManager.m */; };
+		CE3DDE351BE1FD4F0008DD1A /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = CE3DDE341BE1FD4F0008DD1A /* welcome.png */; };
+		CE3DDE391BE202740008DD1A /* bars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE3DDE361BE202740008DD1A /* bars.jpg */; };
+		CE3DDE3A1BE202740008DD1A /* RedLulu101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE3DDE371BE202740008DD1A /* RedLulu101.jpg */; };
+		CE3DDE3B1BE202740008DD1A /* Social-Gathering-Services-960x750.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE3DDE381BE202740008DD1A /* Social-Gathering-Services-960x750.jpg */; };
+		CE400A321BE32DBC007F18E7 /* arrow_white.png in Resources */ = {isa = PBXBuildFile; fileRef = CE400A311BE32DBC007F18E7 /* arrow_white.png */; };
+		CE4ADF3B1BAA221D004F5676 /* AWSContentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4ADF391BAA221D004F5676 /* AWSContentManager.m */; };
+		CE4ADF451BAA234D004F5676 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4ADF441BAA234D004F5676 /* AWSS3.framework */; };
+		CE91D9601BE5D7E10006BA24 /* gen_contact3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE91D95F1BE5D7E10006BA24 /* gen_contact3.png */; };
+		CE91D9621BE5FF9C0006BA24 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = CE91D9611BE5FF9C0006BA24 /* trophy.png */; };
+		CE91D9651BE603290006BA24 /* Icon_ResearchRewards_Green.png in Resources */ = {isa = PBXBuildFile; fileRef = CE91D9631BE603290006BA24 /* Icon_ResearchRewards_Green.png */; };
+		CE91D9661BE603290006BA24 /* rewards-perks-icon-single-new.png in Resources */ = {isa = PBXBuildFile; fileRef = CE91D9641BE603290006BA24 /* rewards-perks-icon-single-new.png */; };
+		CE91D9691BE60E3D0006BA24 /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91D9681BE60E3D0006BA24 /* ChallengeViewController.m */; };
+		CE9B0E831BB5DA0C0082D0CE /* UserFiles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9B0E801BB5DA0C0082D0CE /* UserFiles.storyboard */; };
+		CE9B0E841BB5DA0C0082D0CE /* UserFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B0E821BB5DA0C0082D0CE /* UserFilesViewController.m */; };
+		CE9B0E871BB5E3ED0082D0CE /* UserDataStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9B0E861BB5E3ED0082D0CE /* UserDataStorageViewController.m */; };
+		CEA68A821B87E8E200744C02 /* AWSPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA68A811B87E8E200744C02 /* AWSPushManager.m */; };
+		CEA68A891B87EA7C00744C02 /* AWSSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA68A881B87EA7C00744C02 /* AWSSNS.framework */; };
+		CECE10811BE5195700DCF2DE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE107A1BE5195700DCF2DE /* Bolts.framework */; };
+		CECE10821BE5195700DCF2DE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE107B1BE5195700DCF2DE /* Parse.framework */; };
+		CECE10871BE5195700DCF2DE /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE10801BE5195700DCF2DE /* ParseUI.framework */; };
+		CECE10891BE51A1200DCF2DE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE10881BE51A1200DCF2DE /* AudioToolbox.framework */; };
+		CECE108B1BE51A2200DCF2DE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE108A1BE51A2200DCF2DE /* CFNetwork.framework */; };
+		CECE108D1BE51A3200DCF2DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE108C1BE51A3200DCF2DE /* CoreGraphics.framework */; };
+		CECE108F1BE51A4000DCF2DE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE108E1BE51A4000DCF2DE /* QuartzCore.framework */; };
+		CECE10931BE51A5B00DCF2DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE10921BE51A5B00DCF2DE /* SystemConfiguration.framework */; };
+		CECE10951BE51A6800DCF2DE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE10941BE51A6800DCF2DE /* libz.tbd */; };
+		CECE10971BE51A7200DCF2DE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE10961BE51A7200DCF2DE /* libsqlite3.tbd */; };
+		CECE10991BE51A8D00DCF2DE /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE10981BE51A8D00DCF2DE /* Accounts.framework */; };
+		CECE109B1BE51A9300DCF2DE /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECE109A1BE51A9300DCF2DE /* Social.framework */; };
+		CECE109E1BE52A2D00DCF2DE /* TeamsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECE109D1BE52A2D00DCF2DE /* TeamsListViewController.m */; };
+		CED33FE31BB4900100B357CE /* AWSUserFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CED33FE21BB4900100B357CE /* AWSUserFileManager.m */; };
+		CED33FE51BB49B3D00B357CE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED33FE41BB49B3D00B357CE /* Launch Screen.storyboard */; };
+		CEFA6A8F1BE35DA200696E82 /* CreateTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFA6A8E1BE35DA200696E82 /* CreateTeamViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6605EA871BD7E1D0005A5016 /* AWSPushReceiverDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSPushReceiverDelegate.h; path = MySampleApp/AmazonAws/Push/AWSPushReceiverDelegate.h; sourceTree = SOURCE_ROOT; };
+		6605EA881BD7E557005A5016 /* PushReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushReceiver.h; path = Demo/Push/PushReceiver.h; sourceTree = "<group>"; };
+		6605EA891BD7E557005A5016 /* PushReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushReceiver.m; path = Demo/Push/PushReceiver.m; sourceTree = "<group>"; };
+		661104501B8751B600C8F1F4 /* UserIdentity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserIdentity.storyboard; path = Demo/UserIdentity/UserIdentity.storyboard; sourceTree = "<group>"; };
+		661104571B87526700C8F1F4 /* UserIdentityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserIdentityViewController.h; path = Demo/UserIdentity/UserIdentityViewController.h; sourceTree = "<group>"; };
+		661104581B87526700C8F1F4 /* UserIdentityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserIdentityViewController.m; path = Demo/UserIdentity/UserIdentityViewController.m; sourceTree = "<group>"; };
+		6611045A1B8756F500C8F1F4 /* DemoFeature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoFeature.h; path = demo/DemoFeature.h; sourceTree = "<group>"; };
+		6611045B1B8756F500C8F1F4 /* DemoFeature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoFeature.m; path = demo/DemoFeature.m; sourceTree = "<group>"; };
+		6699C6501BBAF90B00436B45 /* UserSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsViewController.m; sourceTree = "<group>"; };
+		6B0502F61B8BD99500DA1F24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/SignIn.storyboard; sourceTree = "<group>"; };
+		6B0FDBDA1B68472800D38263 /* AWSIdentityManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AWSIdentityManager.h; path = identity/AWSIdentityManager.h; sourceTree = "<group>"; };
+		6B443C491B5DB06200406B17 /* BuddyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B443C4E1B5DB06200406B17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = app/main.m; sourceTree = "<group>"; };
+		6B443C501B5DB06200406B17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = app/AppDelegate.h; sourceTree = "<group>"; };
+		6B443C511B5DB06200406B17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = app/AppDelegate.m; sourceTree = "<group>"; };
+		6B443C591B5DB06200406B17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = app/Images.xcassets; sourceTree = "<group>"; };
+		6B443C731B5DB22500406B17 /* AWSMobileClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSMobileClient.m; sourceTree = "<group>"; };
+		6B443C751B5DB22500406B17 /* AWSConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSConfiguration.h; sourceTree = "<group>"; };
+		6B443C761B5DB22500406B17 /* AWSMobileClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSMobileClient.h; sourceTree = "<group>"; };
+		6B443C781B5DB2F100406B17 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = MySampleApp/sdk/AWS/AWSCore.framework; sourceTree = "<group>"; };
+		6B443C7A1B5DB3A300406B17 /* AWSSignInProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSSignInProvider.h; sourceTree = "<group>"; };
+		6B443C7B1B5DB42300406B17 /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = MySampleApp/sdk/AWS/extras/AWSCognito.framework; sourceTree = "<group>"; };
+		6B443C801B5DD6B100406B17 /* AWSFacebookSignInProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWSFacebookSignInProvider.h; sourceTree = "<group>"; };
+		6B443C811B5DD72900406B17 /* AWSFacebookSignInProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSFacebookSignInProvider.m; sourceTree = "<group>"; };
+		6B443C831B5DD8DC00406B17 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = MySampleApp/sdk/facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		6B443C841B5DD8DC00406B17 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = MySampleApp/sdk/facebook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6B443C851B5DD8DC00406B17 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = MySampleApp/sdk/facebook/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		6B443C8A1B5DEC1F00406B17 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6B443C8C1B5DEC2800406B17 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6B443C901B5DFFF200406B17 /* SignInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		6B443C911B5E002E00406B17 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		6B443C931B5E030500406B17 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = app/MainViewController.h; sourceTree = "<group>"; };
+		6B443C941B5E031B00406B17 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = app/MainViewController.m; sourceTree = "<group>"; };
+		6B8A6F431B616B260035EA74 /* AWSIdentityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSIdentityManager.m; path = identity/AWSIdentityManager.m; sourceTree = "<group>"; };
+		6B9E5DE51BAFDBF6005E71C9 /* UserDataStorage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserDataStorage.storyboard; path = Demo/UserDataStorage/UserDataStorage.storyboard; sourceTree = "<group>"; };
+		6BB938891BAA3CB700C527A0 /* ColorThemeSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorThemeSettings.h; sourceTree = "<group>"; };
+		6BB9388F1BAC68A200C527A0 /* PushNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushNotificationViewController.h; path = demo/push/PushNotificationViewController.h; sourceTree = "<group>"; };
+		6BB938901BAC68A200C527A0 /* PushNotification.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PushNotification.storyboard; path = demo/push/PushNotification.storyboard; sourceTree = "<group>"; };
+		6BB938911BAC68A200C527A0 /* PushNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushNotificationViewController.m; path = demo/push/PushNotificationViewController.m; sourceTree = "<group>"; };
+		6BBC97B61BA358C300DC9B60 /* ColorThemeSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorThemeSettings.m; sourceTree = "<group>"; };
+		6BBC97B91BA7698600DC9B60 /* AWSTask+CheckExceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AWSTask+CheckExceptions.h"; path = "../AmazonAws/Utils/AWSTask+CheckExceptions.h"; sourceTree = "<group>"; };
+		6BBC97BA1BA76A8200DC9B60 /* AWSTask+CheckExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AWSTask+CheckExceptions.m"; path = "../AmazonAws/Utils/AWSTask+CheckExceptions.m"; sourceTree = "<group>"; };
+		6BBCBCA71BB07A31001B8F35 /* UserSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserSettingsViewController.h; path = MySampleApp/Demo/UserSettings/UserSettingsViewController.h; sourceTree = SOURCE_ROOT; };
+		6BBCBCA91BB07C14001B8F35 /* UserSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UserSettings.storyboard; path = MySampleApp/Demo/UserSettings/UserSettings.storyboard; sourceTree = SOURCE_ROOT; };
+		6BCB928C1BAF889F00475B9E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		6BCB92901BAF88D600475B9E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6BCB92921BAF896700475B9E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		6BE45F181B7A7D4F00344228 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = app/Main.storyboard; sourceTree = "<group>"; };
+		6BFF25801B5E360F002364F9 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6BFF25821B5E3617002364F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6BFF258C1B5E364D002364F9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6BFF258E1B5E3655002364F9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6BFF25901B5E366C002364F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE276A6E1BE21E0F00951850 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		CE276A6F1BE21E0F00951850 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		CE276A701BE21E0F00951850 /* Icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-16.png"; sourceTree = "<group>"; };
+		CE276A711BE21E0F00951850 /* Icon-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-24.png"; sourceTree = "<group>"; };
+		CE276A721BE21E0F00951850 /* Icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-32.png"; sourceTree = "<group>"; };
+		CE276A731BE21E0F00951850 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		CE276A741BE21E0F00951850 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		CE276A751BE21E0F00951850 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		CE276A761BE21E0F00951850 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		CE276A771BE21E0F00951850 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		CE276A781BE21E0F00951850 /* Icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-64.png"; sourceTree = "<group>"; };
+		CE276A791BE21E0F00951850 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		CE276A7A1BE21E0F00951850 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		CE276A7B1BE21E0F00951850 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		CE276A7C1BE21E0F00951850 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		CE276A811BE21E0F00951850 /* Icon-Small-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40.png"; sourceTree = "<group>"; };
+		CE276A821BE21E0F00951850 /* Icon-Small-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@2x.png"; sourceTree = "<group>"; };
+		CE276A831BE21E0F00951850 /* Icon-Small-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-40@3x.png"; sourceTree = "<group>"; };
+		CE276A841BE21E0F00951850 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		CE276A851BE21E0F00951850 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		CE276A861BE21E0F00951850 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		CE276A871BE21E0F00951850 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		CE276A881BE21E0F00951850 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		CE276A8C1BE21E0F00951850 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CE276A8D1BE21E0F00951850 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CE276A8E1BE21E0F00951850 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		CE276A8F1BE21E0F00951850 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		CE276AB51BE2231C00951850 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		CE276AB61BE2231C00951850 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		CE3DDE341BE1FD4F0008DD1A /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = welcome.png; path = MySampleApp/App/welcome.png; sourceTree = SOURCE_ROOT; };
+		CE3DDE361BE202740008DD1A /* bars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bars.jpg; path = MySampleApp/App/bars.jpg; sourceTree = SOURCE_ROOT; };
+		CE3DDE371BE202740008DD1A /* RedLulu101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RedLulu101.jpg; path = MySampleApp/App/RedLulu101.jpg; sourceTree = SOURCE_ROOT; };
+		CE3DDE381BE202740008DD1A /* Social-Gathering-Services-960x750.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Social-Gathering-Services-960x750.jpg"; path = "MySampleApp/App/Social-Gathering-Services-960x750.jpg"; sourceTree = SOURCE_ROOT; };
+		CE400A311BE32DBC007F18E7 /* arrow_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_white.png; sourceTree = "<group>"; };
+		CE4ADF381BAA221D004F5676 /* AWSContentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSContentManager.h; path = ../AmazonAws/ContentDelivery/AWSContentManager.h; sourceTree = "<group>"; };
+		CE4ADF391BAA221D004F5676 /* AWSContentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSContentManager.m; path = ../AmazonAws/ContentDelivery/AWSContentManager.m; sourceTree = "<group>"; };
+		CE4ADF3A1BAA221D004F5676 /* AWSCorePrivateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSCorePrivateHeader.h; path = ../AmazonAws/ContentDelivery/AWSCorePrivateHeader.h; sourceTree = "<group>"; };
+		CE4ADF441BAA234D004F5676 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = MySampleApp/sdk/AWS/AWSS3.framework; sourceTree = "<group>"; };
+		CE91D95F1BE5D7E10006BA24 /* gen_contact3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gen_contact3.png; sourceTree = "<group>"; };
+		CE91D9611BE5FF9C0006BA24 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		CE91D9631BE603290006BA24 /* Icon_ResearchRewards_Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_ResearchRewards_Green.png; sourceTree = "<group>"; };
+		CE91D9641BE603290006BA24 /* rewards-perks-icon-single-new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rewards-perks-icon-single-new.png"; sourceTree = "<group>"; };
+		CE91D9671BE60E3D0006BA24 /* ChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChallengeViewController.h; path = App/ChallengeViewController.h; sourceTree = "<group>"; };
+		CE91D9681BE60E3D0006BA24 /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChallengeViewController.m; path = App/ChallengeViewController.m; sourceTree = "<group>"; };
+		CE9B0E801BB5DA0C0082D0CE /* UserFiles.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserFiles.storyboard; sourceTree = "<group>"; };
+		CE9B0E811BB5DA0C0082D0CE /* UserFilesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFilesViewController.h; sourceTree = "<group>"; };
+		CE9B0E821BB5DA0C0082D0CE /* UserFilesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFilesViewController.m; sourceTree = "<group>"; };
+		CE9B0E851BB5E3ED0082D0CE /* UserDataStorageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDataStorageViewController.h; path = Demo/UserDataStorage/UserDataStorageViewController.h; sourceTree = "<group>"; };
+		CE9B0E861BB5E3ED0082D0CE /* UserDataStorageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDataStorageViewController.m; path = Demo/UserDataStorage/UserDataStorageViewController.m; sourceTree = "<group>"; };
+		CEA68A801B87E8E200744C02 /* AWSPushManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSPushManager.h; path = push/AWSPushManager.h; sourceTree = "<group>"; };
+		CEA68A811B87E8E200744C02 /* AWSPushManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSPushManager.m; path = push/AWSPushManager.m; sourceTree = "<group>"; };
+		CEA68A881B87EA7C00744C02 /* AWSSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSSNS.framework; path = MySampleApp/sdk/AWS/AWSSNS.framework; sourceTree = "<group>"; };
+		CECE107A1BE5195700DCF2DE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		CECE107B1BE5195700DCF2DE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		CECE10801BE5195700DCF2DE /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		CECE10881BE51A1200DCF2DE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CECE108A1BE51A2200DCF2DE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CECE108C1BE51A3200DCF2DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CECE108E1BE51A4000DCF2DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CECE10921BE51A5B00DCF2DE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CECE10941BE51A6800DCF2DE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CECE10961BE51A7200DCF2DE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CECE10981BE51A8D00DCF2DE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		CECE109A1BE51A9300DCF2DE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		CECE109C1BE52A2D00DCF2DE /* TeamsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TeamsListViewController.h; path = App/TeamsListViewController.h; sourceTree = "<group>"; };
+		CECE109D1BE52A2D00DCF2DE /* TeamsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TeamsListViewController.m; path = App/TeamsListViewController.m; sourceTree = "<group>"; };
+		CED33FE11BB4900100B357CE /* AWSUserFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSUserFileManager.h; sourceTree = "<group>"; };
+		CED33FE21BB4900100B357CE /* AWSUserFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSUserFileManager.m; sourceTree = "<group>"; };
+		CED33FE41BB49B3D00B357CE /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "App/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CEFA6A8D1BE35DA200696E82 /* CreateTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateTeamViewController.h; path = App/CreateTeamViewController.h; sourceTree = "<group>"; };
+		CEFA6A8E1BE35DA200696E82 /* CreateTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateTeamViewController.m; path = App/CreateTeamViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B443C461B5DB06200406B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECE109B1BE51A9300DCF2DE /* Social.framework in Frameworks */,
+				CECE10991BE51A8D00DCF2DE /* Accounts.framework in Frameworks */,
+				CECE10971BE51A7200DCF2DE /* libsqlite3.tbd in Frameworks */,
+				CECE10951BE51A6800DCF2DE /* libz.tbd in Frameworks */,
+				CECE10931BE51A5B00DCF2DE /* SystemConfiguration.framework in Frameworks */,
+				CECE108F1BE51A4000DCF2DE /* QuartzCore.framework in Frameworks */,
+				CECE108D1BE51A3200DCF2DE /* CoreGraphics.framework in Frameworks */,
+				CECE108B1BE51A2200DCF2DE /* CFNetwork.framework in Frameworks */,
+				CECE10891BE51A1200DCF2DE /* AudioToolbox.framework in Frameworks */,
+				6B443C791B5DB2F100406B17 /* AWSCore.framework in Frameworks */,
+				6B443C7C1B5DB42300406B17 /* AWSCognito.framework in Frameworks */,
+				CE4ADF451BAA234D004F5676 /* AWSS3.framework in Frameworks */,
+				CEA68A891B87EA7C00744C02 /* AWSSNS.framework in Frameworks */,
+				6B443C861B5DD8DC00406B17 /* FBSDKCoreKit.framework in Frameworks */,
+				CECE10871BE5195700DCF2DE /* ParseUI.framework in Frameworks */,
+				6B443C871B5DD8DC00406B17 /* FBSDKLoginKit.framework in Frameworks */,
+				6B443C881B5DD8DC00406B17 /* FBSDKShareKit.framework in Frameworks */,
+				6BFF25831B5E3617002364F9 /* Foundation.framework in Frameworks */,
+				6BFF25911B5E366C002364F9 /* UIKit.framework in Frameworks */,
+				6BCB92931BAF896700475B9E /* AddressBook.framework in Frameworks */,
+				6BCB92911BAF88D600475B9E /* CoreLocation.framework in Frameworks */,
+				6BCB928D1BAF889F00475B9E /* CoreMotion.framework in Frameworks */,
+				6BFF258F1B5E3655002364F9 /* Security.framework in Frameworks */,
+				CECE10821BE5195700DCF2DE /* Parse.framework in Frameworks */,
+				6BFF258D1B5E364D002364F9 /* MediaPlayer.framework in Frameworks */,
+				6BFF25811B5E360F002364F9 /* AssetsLibrary.framework in Frameworks */,
+				CECE10811BE5195700DCF2DE /* Bolts.framework in Frameworks */,
+				6B443C8D1B5DEC2800406B17 /* libz.dylib in Frameworks */,
+				6B443C8B1B5DEC1F00406B17 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B0502EF1B8B85C700DA1F24 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				6BB938901BAC68A200C527A0 /* PushNotification.storyboard */,
+				6BB9388F1BAC68A200C527A0 /* PushNotificationViewController.h */,
+				6BB938911BAC68A200C527A0 /* PushNotificationViewController.m */,
+				6605EA881BD7E557005A5016 /* PushReceiver.h */,
+				6605EA891BD7E557005A5016 /* PushReceiver.m */,
+			);
+			name = Push;
+			sourceTree = "<group>";
+		};
+		6B0502F11B8B86EF00DA1F24 /* UserIdentity */ = {
+			isa = PBXGroup;
+			children = (
+				661104501B8751B600C8F1F4 /* UserIdentity.storyboard */,
+				661104571B87526700C8F1F4 /* UserIdentityViewController.h */,
+				661104581B87526700C8F1F4 /* UserIdentityViewController.m */,
+			);
+			name = UserIdentity;
+			sourceTree = "<group>";
+		};
+		6B0502F41B8BD99500DA1F24 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CE3DDE361BE202740008DD1A /* bars.jpg */,
+				CE3DDE371BE202740008DD1A /* RedLulu101.jpg */,
+				CE3DDE381BE202740008DD1A /* Social-Gathering-Services-960x750.jpg */,
+				CE3DDE341BE1FD4F0008DD1A /* welcome.png */,
+				6B0502F51B8BD99500DA1F24 /* SignIn.storyboard */,
+				6B443C901B5DFFF200406B17 /* SignInViewController.h */,
+				6B443C911B5E002E00406B17 /* SignInViewController.m */,
+			);
+			name = SignIn;
+			path = app/signin;
+			sourceTree = "<group>";
+		};
+		6B281C281B6A7FC6002FCF4F /* Identity */ = {
+			isa = PBXGroup;
+			children = (
+				6B0FDBDA1B68472800D38263 /* AWSIdentityManager.h */,
+				6B8A6F431B616B260035EA74 /* AWSIdentityManager.m */,
+			);
+			name = Identity;
+			sourceTree = "<group>";
+		};
+		6B281C291B6A7FDA002FCF4F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CECE10791BE5195700DCF2DE /* parse-library-1.8.5 */,
+				CEFA6A8D1BE35DA200696E82 /* CreateTeamViewController.h */,
+				CEFA6A8E1BE35DA200696E82 /* CreateTeamViewController.m */,
+				CE276AB41BE2231C00951850 /* Location */,
+				CE276A6D1BE21E0F00951850 /* icons */,
+				6B0502F41B8BD99500DA1F24 /* SignIn */,
+				6BE45F181B7A7D4F00344228 /* Main.storyboard */,
+				CED33FE41BB49B3D00B357CE /* Launch Screen.storyboard */,
+				6B443C501B5DB06200406B17 /* AppDelegate.h */,
+				6B443C511B5DB06200406B17 /* AppDelegate.m */,
+				6B443C931B5E030500406B17 /* MainViewController.h */,
+				6B443C941B5E031B00406B17 /* MainViewController.m */,
+				6B443C591B5DB06200406B17 /* Images.xcassets */,
+				6B443C4C1B5DB06200406B17 /* Supporting Files */,
+				CECE109C1BE52A2D00DCF2DE /* TeamsListViewController.h */,
+				CECE109D1BE52A2D00DCF2DE /* TeamsListViewController.m */,
+				CE91D9671BE60E3D0006BA24 /* ChallengeViewController.h */,
+				CE91D9681BE60E3D0006BA24 /* ChallengeViewController.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		6B443C401B5DB06200406B17 = {
+			isa = PBXGroup;
+			children = (
+				6B443C4B1B5DB06200406B17 /* MySampleApp */,
+				6B443C891B5DD94700406B17 /* Frameworks */,
+				6B443C4A1B5DB06200406B17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B443C4A1B5DB06200406B17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B443C491B5DB06200406B17 /* BuddyProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B443C4B1B5DB06200406B17 /* MySampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				6BCE395E1B7E55C4009BAC85 /* Demo */,
+				6B281C291B6A7FDA002FCF4F /* App */,
+				6B443C721B5DB22500406B17 /* AmazonAws */,
+			);
+			path = MySampleApp;
+			sourceTree = "<group>";
+		};
+		6B443C4C1B5DB06200406B17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B443C4E1B5DB06200406B17 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B443C721B5DB22500406B17 /* AmazonAws */ = {
+			isa = PBXGroup;
+			children = (
+				6BBC97B81BA766E000DC9B60 /* Utils */,
+				6B8A6F401B5ECF0D0035EA74 /* SignIn */,
+				6B281C281B6A7FC6002FCF4F /* Identity */,
+				CEA68A7C1B87E89600744C02 /* Push */,
+				CE4ADF371BAA21ED004F5676 /* ContentDelivery */,
+				CED33FE01BB4900100B357CE /* UserFiles */,
+				6B443C761B5DB22500406B17 /* AWSMobileClient.h */,
+				6B443C731B5DB22500406B17 /* AWSMobileClient.m */,
+				6B443C751B5DB22500406B17 /* AWSConfiguration.h */,
+			);
+			name = AmazonAws;
+			path = amazonaws;
+			sourceTree = "<group>";
+		};
+		6B443C891B5DD94700406B17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CECE109A1BE51A9300DCF2DE /* Social.framework */,
+				CECE10981BE51A8D00DCF2DE /* Accounts.framework */,
+				CECE10961BE51A7200DCF2DE /* libsqlite3.tbd */,
+				CECE10941BE51A6800DCF2DE /* libz.tbd */,
+				CECE10921BE51A5B00DCF2DE /* SystemConfiguration.framework */,
+				CECE108E1BE51A4000DCF2DE /* QuartzCore.framework */,
+				CECE108C1BE51A3200DCF2DE /* CoreGraphics.framework */,
+				CECE108A1BE51A2200DCF2DE /* CFNetwork.framework */,
+				CECE10881BE51A1200DCF2DE /* AudioToolbox.framework */,
+				6BCB92921BAF896700475B9E /* AddressBook.framework */,
+				6BCB92901BAF88D600475B9E /* CoreLocation.framework */,
+				6BCB928C1BAF889F00475B9E /* CoreMotion.framework */,
+				CE4ADF441BAA234D004F5676 /* AWSS3.framework */,
+				CEA68A881B87EA7C00744C02 /* AWSSNS.framework */,
+				6BFF25901B5E366C002364F9 /* UIKit.framework */,
+				6BFF258E1B5E3655002364F9 /* Security.framework */,
+				6BFF258C1B5E364D002364F9 /* MediaPlayer.framework */,
+				6BFF25821B5E3617002364F9 /* Foundation.framework */,
+				6BFF25801B5E360F002364F9 /* AssetsLibrary.framework */,
+				6B443C8C1B5DEC2800406B17 /* libz.dylib */,
+				6B443C8A1B5DEC1F00406B17 /* libsqlite3.dylib */,
+				6B443C831B5DD8DC00406B17 /* FBSDKCoreKit.framework */,
+				6B443C841B5DD8DC00406B17 /* FBSDKLoginKit.framework */,
+				6B443C851B5DD8DC00406B17 /* FBSDKShareKit.framework */,
+				6B443C7B1B5DB42300406B17 /* AWSCognito.framework */,
+				6B443C781B5DB2F100406B17 /* AWSCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B8A6F401B5ECF0D0035EA74 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				6B443C7A1B5DB3A300406B17 /* AWSSignInProvider.h */,
+				6B443C801B5DD6B100406B17 /* AWSFacebookSignInProvider.h */,
+				6B443C811B5DD72900406B17 /* AWSFacebookSignInProvider.m */,
+			);
+			name = SignIn;
+			path = signin;
+			sourceTree = "<group>";
+		};
+		6B9E5DE41BAFDB3F005E71C9 /* UserDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				6B9E5DE51BAFDBF6005E71C9 /* UserDataStorage.storyboard */,
+				CE9B0E851BB5E3ED0082D0CE /* UserDataStorageViewController.h */,
+				CE9B0E861BB5E3ED0082D0CE /* UserDataStorageViewController.m */,
+			);
+			name = UserDataStorage;
+			sourceTree = "<group>";
+		};
+		6BBC97AE1BA244E000DC9B60 /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				6BB938891BAA3CB700C527A0 /* ColorThemeSettings.h */,
+				6BBC97B61BA358C300DC9B60 /* ColorThemeSettings.m */,
+				6BBCBCA91BB07C14001B8F35 /* UserSettings.storyboard */,
+				6BBCBCA71BB07A31001B8F35 /* UserSettingsViewController.h */,
+				6699C6501BBAF90B00436B45 /* UserSettingsViewController.m */,
+			);
+			name = UserSettings;
+			path = Demo/UserSettings;
+			sourceTree = "<group>";
+		};
+		6BBC97B81BA766E000DC9B60 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BBC97B91BA7698600DC9B60 /* AWSTask+CheckExceptions.h */,
+				6BBC97BA1BA76A8200DC9B60 /* AWSTask+CheckExceptions.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		6BCE395E1B7E55C4009BAC85 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				6611045A1B8756F500C8F1F4 /* DemoFeature.h */,
+				6611045B1B8756F500C8F1F4 /* DemoFeature.m */,
+				CE9B0E7F1BB5DA0C0082D0CE /* UserFiles */,
+				6BBC97AE1BA244E000DC9B60 /* UserSettings */,
+				6B9E5DE41BAFDB3F005E71C9 /* UserDataStorage */,
+				CE4ADF3C1BAA2226004F5676 /* ContentDelivery */,
+				6B0502F11B8B86EF00DA1F24 /* UserIdentity */,
+				6B0502EF1B8B85C700DA1F24 /* Push */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		CE276A6D1BE21E0F00951850 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CE91D9631BE603290006BA24 /* Icon_ResearchRewards_Green.png */,
+				CE91D9641BE603290006BA24 /* rewards-perks-icon-single-new.png */,
+				CE91D9611BE5FF9C0006BA24 /* trophy.png */,
+				CE91D95F1BE5D7E10006BA24 /* gen_contact3.png */,
+				CE400A311BE32DBC007F18E7 /* arrow_white.png */,
+				CE276A6E1BE21E0F00951850 /* Icon-120.png */,
+				CE276A6F1BE21E0F00951850 /* Icon-152.png */,
+				CE276A701BE21E0F00951850 /* Icon-16.png */,
+				CE276A711BE21E0F00951850 /* Icon-24.png */,
+				CE276A721BE21E0F00951850 /* Icon-32.png */,
+				CE276A731BE21E0F00951850 /* Icon-40.png */,
+				CE276A741BE21E0F00951850 /* Icon-40@2x.png */,
+				CE276A751BE21E0F00951850 /* Icon-60.png */,
+				CE276A761BE21E0F00951850 /* Icon-60@2x.png */,
+				CE276A771BE21E0F00951850 /* Icon-60@3x.png */,
+				CE276A781BE21E0F00951850 /* Icon-64.png */,
+				CE276A791BE21E0F00951850 /* Icon-72.png */,
+				CE276A7A1BE21E0F00951850 /* Icon-72@2x.png */,
+				CE276A7B1BE21E0F00951850 /* Icon-76.png */,
+				CE276A7C1BE21E0F00951850 /* Icon-76@2x.png */,
+				CE276A811BE21E0F00951850 /* Icon-Small-40.png */,
+				CE276A821BE21E0F00951850 /* Icon-Small-40@2x.png */,
+				CE276A831BE21E0F00951850 /* Icon-Small-40@3x.png */,
+				CE276A841BE21E0F00951850 /* Icon-Small-50.png */,
+				CE276A851BE21E0F00951850 /* Icon-Small-50@2x.png */,
+				CE276A861BE21E0F00951850 /* Icon-Small.png */,
+				CE276A871BE21E0F00951850 /* Icon-Small@2x.png */,
+				CE276A881BE21E0F00951850 /* Icon-Small@3x.png */,
+				CE276A8C1BE21E0F00951850 /* Icon.png */,
+				CE276A8D1BE21E0F00951850 /* Icon@2x.png */,
+				CE276A8E1BE21E0F00951850 /* iTunesArtwork.png */,
+				CE276A8F1BE21E0F00951850 /* iTunesArtwork@2x.png */,
+			);
+			name = icons;
+			path = App/icons;
+			sourceTree = "<group>";
+		};
+		CE276AB41BE2231C00951850 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				CE276AB51BE2231C00951850 /* LocationManager.h */,
+				CE276AB61BE2231C00951850 /* LocationManager.m */,
+			);
+			name = Location;
+			path = App/Location;
+			sourceTree = "<group>";
+		};
+		CE4ADF371BAA21ED004F5676 /* ContentDelivery */ = {
+			isa = PBXGroup;
+			children = (
+				CE4ADF381BAA221D004F5676 /* AWSContentManager.h */,
+				CE4ADF391BAA221D004F5676 /* AWSContentManager.m */,
+				CE4ADF3A1BAA221D004F5676 /* AWSCorePrivateHeader.h */,
+			);
+			name = ContentDelivery;
+			sourceTree = "<group>";
+		};
+		CE4ADF3C1BAA2226004F5676 /* ContentDelivery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ContentDelivery;
+			sourceTree = "<group>";
+		};
+		CE9B0E7F1BB5DA0C0082D0CE /* UserFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B0E801BB5DA0C0082D0CE /* UserFiles.storyboard */,
+				CE9B0E811BB5DA0C0082D0CE /* UserFilesViewController.h */,
+				CE9B0E821BB5DA0C0082D0CE /* UserFilesViewController.m */,
+			);
+			name = UserFiles;
+			path = Demo/UserFiles;
+			sourceTree = "<group>";
+		};
+		CEA68A7C1B87E89600744C02 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				CEA68A801B87E8E200744C02 /* AWSPushManager.h */,
+				CEA68A811B87E8E200744C02 /* AWSPushManager.m */,
+				6605EA871BD7E1D0005A5016 /* AWSPushReceiverDelegate.h */,
+			);
+			name = Push;
+			sourceTree = "<group>";
+		};
+		CECE10791BE5195700DCF2DE /* parse-library-1.8.5 */ = {
+			isa = PBXGroup;
+			children = (
+				CECE107A1BE5195700DCF2DE /* Bolts.framework */,
+				CECE107B1BE5195700DCF2DE /* Parse.framework */,
+				CECE10801BE5195700DCF2DE /* ParseUI.framework */,
+			);
+			path = "parse-library-1.8.5";
+			sourceTree = SOURCE_ROOT;
+		};
+		CED33FE01BB4900100B357CE /* UserFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CED33FE11BB4900100B357CE /* AWSUserFileManager.h */,
+				CED33FE21BB4900100B357CE /* AWSUserFileManager.m */,
+			);
+			name = UserFiles;
+			path = MySampleApp/AmazonAws/UserFiles;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B443C481B5DB06200406B17 /* BuddyProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B443C6C1B5DB06200406B17 /* Build configuration list for PBXNativeTarget "BuddyProject" */;
+			buildPhases = (
+				6B443C451B5DB06200406B17 /* Sources */,
+				6B443C461B5DB06200406B17 /* Frameworks */,
+				6B443C471B5DB06200406B17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuddyProject;
+			productName = MySampleApp;
+			productReference = 6B443C491B5DB06200406B17 /* BuddyProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B443C411B5DB06200406B17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Amazon;
+				TargetAttributes = {
+					6B443C481B5DB06200406B17 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = S2UT857XCW;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 6B443C441B5DB06200406B17 /* Build configuration list for PBXProject "BuddyProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B443C401B5DB06200406B17;
+			productRefGroup = 6B443C4A1B5DB06200406B17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B443C481B5DB06200406B17 /* BuddyProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B443C471B5DB06200406B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE276A911BE21E0F00951850 /* Icon-120.png in Resources */,
+				CE276A9C1BE21E0F00951850 /* Icon-72.png in Resources */,
+				CE91D9621BE5FF9C0006BA24 /* trophy.png in Resources */,
+				CE276A941BE21E0F00951850 /* Icon-24.png in Resources */,
+				6B0502F71B8BD99500DA1F24 /* SignIn.storyboard in Resources */,
+				CED33FE51BB49B3D00B357CE /* Launch Screen.storyboard in Resources */,
+				6BBCBCAA1BB07C14001B8F35 /* UserSettings.storyboard in Resources */,
+				CE276AAF1BE21E0F00951850 /* Icon.png in Resources */,
+				CE91D9661BE603290006BA24 /* rewards-perks-icon-single-new.png in Resources */,
+				CE276A981BE21E0F00951850 /* Icon-60.png in Resources */,
+				CE276AA91BE21E0F00951850 /* Icon-Small.png in Resources */,
+				CE91D9601BE5D7E10006BA24 /* gen_contact3.png in Resources */,
+				CE276AA81BE21E0F00951850 /* Icon-Small-50@2x.png in Resources */,
+				CE276A9A1BE21E0F00951850 /* Icon-60@3x.png in Resources */,
+				CE400A321BE32DBC007F18E7 /* arrow_white.png in Resources */,
+				6BE45F191B7A7D4F00344228 /* Main.storyboard in Resources */,
+				CE276AA41BE21E0F00951850 /* Icon-Small-40.png in Resources */,
+				CE3DDE3B1BE202740008DD1A /* Social-Gathering-Services-960x750.jpg in Resources */,
+				CE3DDE3A1BE202740008DD1A /* RedLulu101.jpg in Resources */,
+				CE276AB01BE21E0F00951850 /* Icon@2x.png in Resources */,
+				6B443C5A1B5DB06200406B17 /* Images.xcassets in Resources */,
+				CE276AAA1BE21E0F00951850 /* Icon-Small@2x.png in Resources */,
+				CE276AA61BE21E0F00951850 /* Icon-Small-40@3x.png in Resources */,
+				CE91D9651BE603290006BA24 /* Icon_ResearchRewards_Green.png in Resources */,
+				CE276A9D1BE21E0F00951850 /* Icon-72@2x.png in Resources */,
+				CE276A971BE21E0F00951850 /* Icon-40@2x.png in Resources */,
+				661104511B8751B600C8F1F4 /* UserIdentity.storyboard in Resources */,
+				CE276AA71BE21E0F00951850 /* Icon-Small-50.png in Resources */,
+				CE3DDE351BE1FD4F0008DD1A /* welcome.png in Resources */,
+				CE276A9B1BE21E0F00951850 /* Icon-64.png in Resources */,
+				CE276AB11BE21E0F00951850 /* iTunesArtwork.png in Resources */,
+				CE276A9E1BE21E0F00951850 /* Icon-76.png in Resources */,
+				CE276AA51BE21E0F00951850 /* Icon-Small-40@2x.png in Resources */,
+				CE276A9F1BE21E0F00951850 /* Icon-76@2x.png in Resources */,
+				6BB938921BAC68A200C527A0 /* PushNotification.storyboard in Resources */,
+				CE276A931BE21E0F00951850 /* Icon-16.png in Resources */,
+				CE276A991BE21E0F00951850 /* Icon-60@2x.png in Resources */,
+				CE9B0E831BB5DA0C0082D0CE /* UserFiles.storyboard in Resources */,
+				6B9E5DE61BAFDBF6005E71C9 /* UserDataStorage.storyboard in Resources */,
+				CE276A921BE21E0F00951850 /* Icon-152.png in Resources */,
+				CE3DDE391BE202740008DD1A /* bars.jpg in Resources */,
+				CE276A951BE21E0F00951850 /* Icon-32.png in Resources */,
+				CE276AB21BE21E0F00951850 /* iTunesArtwork@2x.png in Resources */,
+				CE276AAB1BE21E0F00951850 /* Icon-Small@3x.png in Resources */,
+				CE276A961BE21E0F00951850 /* Icon-40.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B443C451B5DB06200406B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BBC97BB1BA76A8200DC9B60 /* AWSTask+CheckExceptions.m in Sources */,
+				CECE109E1BE52A2D00DCF2DE /* TeamsListViewController.m in Sources */,
+				6BBC97B71BA358C300DC9B60 /* ColorThemeSettings.m in Sources */,
+				CED33FE31BB4900100B357CE /* AWSUserFileManager.m in Sources */,
+				6B443C921B5E002E00406B17 /* SignInViewController.m in Sources */,
+				CEFA6A8F1BE35DA200696E82 /* CreateTeamViewController.m in Sources */,
+				6605EA8A1BD7E557005A5016 /* PushReceiver.m in Sources */,
+				CEA68A821B87E8E200744C02 /* AWSPushManager.m in Sources */,
+				6BB938931BAC68A200C527A0 /* PushNotificationViewController.m in Sources */,
+				6699C6511BBAF90B00436B45 /* UserSettingsViewController.m in Sources */,
+				6B443C521B5DB06200406B17 /* AppDelegate.m in Sources */,
+				6B443C771B5DB22500406B17 /* AWSMobileClient.m in Sources */,
+				CE9B0E841BB5DA0C0082D0CE /* UserFilesViewController.m in Sources */,
+				6611045C1B8756F500C8F1F4 /* DemoFeature.m in Sources */,
+				6B443C951B5E031B00406B17 /* MainViewController.m in Sources */,
+				661104591B87526700C8F1F4 /* UserIdentityViewController.m in Sources */,
+				CE9B0E871BB5E3ED0082D0CE /* UserDataStorageViewController.m in Sources */,
+				6B443C821B5DD72900406B17 /* AWSFacebookSignInProvider.m in Sources */,
+				CE276AB71BE2231C00951850 /* LocationManager.m in Sources */,
+				6B8A6F441B616B260035EA74 /* AWSIdentityManager.m in Sources */,
+				CE91D9691BE60E3D0006BA24 /* ChallengeViewController.m in Sources */,
+				CE4ADF3B1BAA221D004F5676 /* AWSContentManager.m in Sources */,
+				6B443C4F1B5DB06200406B17 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B0502F51B8BD99500DA1F24 /* SignIn.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B0502F61B8BD99500DA1F24 /* en */,
+			);
+			name = SignIn.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B443C6A1B5DB06200406B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B443C6B1B5DB06200406B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B443C6D1B5DB06200406B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySampleApp/sdk/aws/extras",
+					"$(PROJECT_DIR)/MySampleApp/sdk/facebook",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MySampleApp/sdk/google",
+					"$(PROJECT_DIR)/MySampleApp/sdk/twitter",
+					"$(PROJECT_DIR)/MySampleApp/sdk/aws",
+					"$(PROJECT_DIR)/MySampleApp/sdk/AWS",
+					"$(PROJECT_DIR)/MySampleApp/sdk/AWS/extras",
+					"$(PROJECT_DIR)/parse-library-1.8.5",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MySampleApp/app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amazon.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = BuddyProject;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B443C6E1B5DB06200406B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MySampleApp/sdk/facebook",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MySampleApp/sdk/google",
+					"$(PROJECT_DIR)/MySampleApp/sdk/twitter",
+					"$(PROJECT_DIR)/MySampleApp/sdk/aws",
+					"$(PROJECT_DIR)/MySampleApp/sdk/aws/extras",
+					"$(PROJECT_DIR)/MySampleApp/sdk/AWS",
+					"$(PROJECT_DIR)/MySampleApp/sdk/AWS/extras",
+					"$(PROJECT_DIR)/parse-library-1.8.5",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MySampleApp/app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amazon.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = BuddyProject;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B443C441B5DB06200406B17 /* Build configuration list for PBXProject "BuddyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B443C6A1B5DB06200406B17 /* Debug */,
+				6B443C6B1B5DB06200406B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B443C6C1B5DB06200406B17 /* Build configuration list for PBXNativeTarget "BuddyProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B443C6D1B5DB06200406B17 /* Debug */,
+				6B443C6E1B5DB06200406B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B443C411B5DB06200406B17 /* Project object */;
+}
